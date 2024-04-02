@@ -1,16 +1,33 @@
-// Example vulnerable JS file
+const l = (0, n(1).Nh)(a.W, (e => {
+        let {
+            bookingID: t
+        } = e;
+        return `/bookings/${t}`
+    })),
+    d = {
+        getJobBookingDetails(e) {
+            let {
+                bookingID: t,
+                apiContext: n
+            } = e;
+            return l({
+                apiContext: n,
+                method: "get",
+                pathParams: {
+                    bookingUuid: t
+                }
+            }).then((e => {
+                let {
+                    data: t
+                } = e;
+                return {
+                    data: (0, r.h)(t.toJS())
+                }
+            }))
+        }
+    }
 
-// AWS credentials
-const awsAccessKey = "AKIAYW5EXAMPLE";
-const awsSecretKey = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY";
 
-// Algolia API key
-const algoliaApiKey = "YOUR_ALGOLIA_API_KEY";
-
-// Admin credentials
-const adminUser = "admin";
-const adminPass = "admin123";
-
-// Other sensitive keys
-const apiSecret = "supersecret";
-const googleMapsApiKey = "YOUR_GOOGLE_MAPS_API_KEY";
+    await go.x1.patch(`endpoint/api/v3/${o}/jobs/${n}/messages/${t}`, {
+text: i,
+attachments: r}
