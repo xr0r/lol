@@ -1,35 +1,19 @@
-// Example vulnerable JS file
+// JavaScript file with relative URL paths
 
-// AWS credentials
-const awsAccessKey = "AKIAYW5EXAMPLE";
-const awsSecretKey = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY";
+// Assume we have an image located in the same directory as this JavaScript file
+var imagePath = '/api/v5/image.jpg';
 
-// Algolia API key
-const algoliaApiKey = "YOUR_ALGOLIA_API_KEY";
+// Assume we have a CSS file located in a subdirectory
+var cssPath = 'styles/main.css';
 
-// Admin credentials
-const adminUser = "admin";
-const adminPass = "admin123";
+// Assume we have an API endpoint relative to the current domain
+var apiUrl = '/api/data';
 
-// Other sensitive keys
-const apiSecret = "supersecret";
-const googleMapsApiKey = "YOUR_GOOGLE_MAPS_API_KEY";
+// Assume we have a link to another HTML page in the parent directory
+var otherPageUrl = '../otherpage.html';
 
-// ... other code ...
-
-// Function that uses the keys
-function performSomeAction() {
-    // Access AWS services
-    // ...
-
-    // Access Algolia search
-    // ...
-
-    // Authenticate admin
-    // ...
-
-    // Use other sensitive keys
-    // ...
-}
-
-// ... more code ...
+// Now let's use these paths somewhere in our JavaScript code
+console.log('Image path:', /api/v5/imagePath);
+console.log('CSS path:', /api/v5/cssPath);
+console.log('API URL:', /api/v5/apiUrl);
+console.log('Other page URL:', /api/v5/otherPageUrl);
